@@ -35,6 +35,7 @@ path = /path/to/example
 
 ; Optional. The name of the card URLs file if you want it to be something other than the default.
 urls_file = CardImageUrls1.txt
+
 ; The full URl to the raw version of the file that Lackey can read from. 
 url = https://raw.githubusercontent.com/merlinofchaos/lackey-build-example/main
 
