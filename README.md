@@ -3,7 +3,7 @@
 This script will build the following files for use in maintaining Lackey CCG plugins remotely:
 * `updatelist.txt`
 * `version.txt`
-* `CardImages.txt`
+* `CardImageUrls1.txt` (or similar)
 
 ## Requirements
 * Your plugin has the following files required already functioning for Lackey:
@@ -48,5 +48,5 @@ files[] = additional2.txt
 
 ## Using the example repo:
 * `git clone https://github.com/merlinofchaos/lackey-build-example`
-* Create the following example example.ini file
-* `php build.php /path/to/example.ini`
+* Potentially update the lackey-example.ini to point to where you checked it out.
+* `php build.php lackey-example.ini`
