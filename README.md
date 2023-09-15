@@ -48,6 +48,6 @@ files[] = additional2.txt
 ```
 
 ## Using the example repo:
-* `git clone https://github.com/merlinofchaos/lackey-build-example`
+* `git clone https://github.com/merlinofchaos/lackey-example`
 * Potentially update the lackey-example.ini to point to where you checked it out.
 * `php build.php lackey-example.ini`
