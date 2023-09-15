@@ -29,6 +29,9 @@ class LackeyGenerator {
     'version.txt',
     'packs',
     'sets',
+    'backgrounds',
+    'sets/setimages/general/cardback.jpg',
+    'sets/setimages/general/spawned.jpg',
   ];
 
   public $plugin = NULL;
@@ -177,7 +180,15 @@ class LackeyGenerator {
       return $result;
     }
 
-    return 'plugins/' . $this->plugin . '/' . $filename . "\t" .
+    // Background images don't go in plugins, they go in images/background so that they can be selected in the UX.
+    if (strpos($filename, 'backgrounds') === 0) {
+      $prefix = 'images';
+    }
+    else {
+      $prefix = 'plugins/' . $this->plugin;
+    }
+
+    return $prefix . '/' . $filename . "\t" .
       $this->url . '/' . $filename . "\t" .
       $this->generateFileHash($this->path . $filename) . PHP_EOL;
   }
