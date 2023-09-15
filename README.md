@@ -37,7 +37,7 @@ path = /path/to/example
 urls_file = CardImageUrls1.txt
 
 ; The full URl to the raw version of the file that Lackey can read from. 
-url = https://raw.githubusercontent.com/merlinofchaos/lackey-build-example/main
+url = https://raw.githubusercontent.com/merlinofchaos/lackey-example/main
 
 ; Any optional files that should be added to the updatelist. If a directory is
 ; added, all files within that directory will be added. You do not need to
